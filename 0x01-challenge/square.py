@@ -9,6 +9,7 @@ class Square():
 
 
     def __init__(self, *args, **kwargs):
+        '''Initializes the instance'''
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -21,6 +22,7 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        ''' Returns a string in the form width/height '''
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
